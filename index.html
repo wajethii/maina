@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maina-Mwangi-UI-Designer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white">
+    <!-- Container div to wrap entire content -->
+    <div class="mx-auto max-w-screen-lg">
+
+        <!-- Navigation bar -->
+        <nav class="bg-white-900 p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Logo (left) -->
+                <div class="flex items-center">
+                    <span><a href="index.html"
+                            class="text-black text-lg font-semibold hover:text-gray-500 px-4">MM</a></span>
+
+                </div>
+                <!-- Navbar links (right) -->
+                <div class="hidden md:flex">
+                    <a href="work.html" class="text-black hover:text-gray-500 font-semibold px-4">Work</a>
+                    <a href="about.html" class="text-black hover:text-gray-500 font-semibold px-4">About</a>
+                    <a href="gallery.html" class="text-black hover:text-gray-500 font-semibold px-4">Gallery</a>
+                    <a href="contact.html" class="text-black hover:text-gray-500 font-semibold px-4">Contact</a>
+                </div>
+                <!-- Hamburger icon for mobile -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-black hover:text-gray-500 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu (hidden by default) -->
+            <div id="mobile-menu" class="md:hidden hidden bg-black">
+                <div class="px-2 py-4">
+                    <a href="work.html" class="block text-white hover:text-gray-500 px-4 py-2">Work</a>
+                    <a href="about.html" class="block text-white hover:text-gray-500 px-4 py-2">About</a>
+                    <a href="gallery.html" class="block text-white hover:text-gray-500 px-4 py-2">Gallery</a>
+                    <a href="contact.html" class="block text-white hover:text-gray-500 px-4 py-2">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page content -->
+        <div class="h-screen flex justify-start items-center">
+            <div class="p-4">
+                <h1 class="text-6xl text-pretty md:text-5xl lg:text-8xl inline-block">Hi I am Maina,
+                    <span class="block">a Pixel Magician</span>
+                </h1>
+            </div>
+        </div>
+        <!-- Projects -->
+        <div class="bg-white p-8 rounded-t-xl">
+            <h1 class="text-6xl text-pretty md:text-5xl lg:text-8xl">Featured
+                <span class="block">Projects</span>
+            </h1>
+            <div class="columns-3xs flex flex-wrap mt-8">
+                <div class="w-full md:w-1/2 mb-8">
+                    <a href="#" class="block">
+                        <img class="rounded-xl w-full aspect-video hover:opacity-75" src="images/three.webp" />
+                        <h2 class="mt-4 hover:text-blue-500 text-3xl text-pretty md:text-2xl lg:text-xl">Description of
+                            Image 1</h2>
+                    </a>
+                </div>
+                <div class="w-full md:w-1/2 mb-8">
+                    <a href="#" class="block">
+                        <img class="rounded-xl w-full aspect-square hover:opacity-75" src="images/four.webp" />
+                        <h2 class="mt-4 hover:text-blue-500 text-3xl text-pretty md:text-4xl lg:text-xl">Description of
+                            Image 2</h2>
+                    </a>
+                </div>
+                <div class="w-full md:w-1/2 mb-8">
+                    <a href="#" class="block">
+                        <img class="rounded-xl w-full aspect-video hover:opacity-75" src="images/three.webp" />
+                        <h2 class="mt-4 hover:text-blue-500 text-3xl text-pretty md:text-4xl lg:text-xl">Description of
+                            Image 3</h2>
+                    </a>
+                </div>
+                <div class="w-full md:w-1/2 mb-8">
+                    <a href="#" class="block">
+                        <img class="rounded-xl w-full aspect-square hover:opacity-75" src="images/four.webp" />
+                        <h2 class="mt-4 hover:text-blue-500 text-3xl text-pretty md:text-4xl lg:text-xl">Description of
+                            Image 4</h2>
+                    </a>
+                </div>
+                <!-- Add more image and description pairs as needed -->
+            </div>
+        </div>
+        <!-- Why choose Me -->
+        <div class="bg-white p-8 rounded-t-xl">
+            <h1 class="text-6xl text-pretty md:text-5xl lg:text-8xl">Why Choose Me</h1>
+            <div class="columns-3xs flex flex-wrap mt-10 mb-8">
+                <div class="w-full md:w-1/4 mb-8 flex items-center">
+                    <img class="rounded-xl w-full aspect-video" src="images/three.webp" alt="Image 1">
+                </div>
+                <div class="w-full md:w-3/4 mb-8 flex justify-center items-center">
+                    <div class="w-full md:w-3/4">
+                        <p class="text-lg text-gray-700 leading-relaxed">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Nullam convallis, libero non tristique viverra, dui justo eleifend arcu, eu
+                            posuere lorem risus at mi.</p>
+                        <p class="text-lg text-gray-700 leading-relaxed">Fusce vel risus at eros dignissim vehicula. In
+                            varius, sapien nec rhoncus cursus, nisl urna sodales mauris, sit amet dictum nulla sem eget
+                            neque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="bg-black text-white py-8 px-4 rounded-t-3xl">
+            <div class="container mx-auto flex flex-col items-start justify-start px-4">
+                <h1 class="text-2xl md:text-3xl mb-4">Follow Me</h1>
+                <div class="flex flex-col items-start w-full mt-10">
+                    <a href="https://www.behance.net/" target="_blank"
+                        class="flex justify-between items-center w-full text-white hover:bg-white hover:text-black text-lg mb-2 py-2 px-4">
+                        <span>Behance</span>
+                        <img src="src/arrow-right-top.svg" class="h-6 w-6 fill-current ml-2" alt="Behance icon">
+                    </a>
+                    <div class="divider mb-2 border-t border-white"></div>
+                    <a href="https://www.linkedin.com/" target="_blank"
+                        class="flex justify-between items-center w-full text-white hover:bg-white hover:text-black text-lg mb-2 py-2 px-4">
+                        <span>LinkedIn</span>
+                        <img src="src/arrow-right-top.svg" class="h-6 w-6 fill-current ml-2" alt="LinkedIn icon">
+                    </a>
+                    <div class="divider mb-2 border-t border-white"></div>
+                    <a href="https://twitter.com/" target="_blank"
+                        class="flex justify-between items-center w-full text-white hover:bg-white hover:text-black text-lg mb-2 py-2 px-4">
+                        <span>Twitter</span>
+                        <img src="src/arrow-right-top.svg" class="h-6 w-6 fill-current ml-2" alt="Twitter icon">
+                    </a>
+                    <div class="divider mb-2 border-t border-white"></div>
+                    <a href="https://medium.com/" target="_blank"
+                        class="flex justify-between items-center w-full text-white hover:bg-white hover:text-black text-lg mb-2 py-2 px-4">
+                        <span>Medium</span>
+                        <img src="src/arrow-right-top.svg" class="h-6 w-6 fill-current ml-2" alt="Medium icon">
+                    </a>
+                </div>
+                <p class="mt-8 text-sm text-center">&copy; <span id="copyrightYear"></span>
+                    Dennis Mwangi. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div> <!-- Closing container div -->
+    <script>
+        document.getElementById("copyrightYear").innerHTML = new Date().getFullYear();
+    </script>
+
+    <script>
+        // JavaScript to toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
