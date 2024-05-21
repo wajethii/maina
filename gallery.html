@@ -1,34 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<<head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery-Dennis Maina</title>
-    <meta name="description" content="Explore Dennis Maina's UI/UX design portfolio showcasing innovative and user-centered designs.">
-    <meta name="keywords" content="Dennis Maina, UI Designer, UX Designer, UI/UX, User Interface Design, User Experience Design, Portfolio, Design Magic, Stanchart, Prospa, Motley, Penceli, Little Town, Magical Kenya, Morianah, Kikoi App, Gigi Wear, Tembea Kenya, Front End Developer, Graphic Designer, Web Developer, Web Designer, Web Design Nairobi, Web Development Nairobi, UX Design Nairobi, UI Design Nairobi, User Experience Design Nairobi, Design Showcase, Front-end Development Showcase, Visual Portfolio, Creative Web Design Examples, Development Marvels, Behind-the-scenes Creative Process, Digital Design Gallery, Stunning Visuals, Web Design Portfolio, Creative Project Gallery">
-    <meta name="author" content="Dennis Maina">
-    
-    <!-- Open Graph metadata for social media sharing -->
-    <meta property="og:title" content="Dennis Maina - UI/UX Portfolio">
-    <meta property="og:description" content="Explore Dennis Maina's UI/UX design portfolio showcasing innovative and user-centered designs.">
-    <meta property="og:image" content="https://example.com/og-image.jpg">
-    <meta property="og:url" content="https://example.com">
+    <title>Gallery - Dennis Mwangi UI Designer</title>
+    <meta name="description"
+        content="Explore Dennis Mwangi's UI/UX design portfolio showcasing innovative and user-centered designs.">
+    <meta name="keywords"
+        content="ui designer, Dennis Mwangi, UI/UX, user interface design, user experience design, portfolio">
+    <meta property="og:title" content="Gallery - Dennis Mwangi | UI/UX Design Portfolio">
     <meta property="og:type" content="website">
-    
-    <!-- Twitter Card metadata for Twitter sharing -->
+    <meta property="og:description"
+        content="Explore Dennis Mwangi's UI/UX design portfolio showcasing innovative and user-centered designs.">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Dennis Maina - UI/UX Portfolio">
-    <meta name="twitter:description" content="Explore Dennis Maina's UI/UX design portfolio showcasing innovative and user-centered designs.">
-    <meta name="twitter:image" content="https://example.com/twitter-image.jpg">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://example.com">
-    
-    <!-- CSS stylesheet -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
+    <meta property="twitter:title" content="Gallery - Dennis Mwangi | UI/UX Design Portfolio">
+    <meta property="twitter:description"
+        content="Explore Dennis Mwangi's UI/UX design portfolio showcasing innovative and user-centered designs.">
 
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Additional CSS or scripts can be added here -->
+</head>
 
 <body class="bg-white">
     <!-- Container div to wrap entire content -->
@@ -39,16 +31,12 @@
             <div class="container mx-auto flex justify-between items-center">
                 <!-- Logo (left) -->
                 <div class="flex items-center">
-                    <span><a href="index.html"
-                            class="text-black text-lg font-semibold hover:text-gray-500 px-4">DM</a></span>
+                    <span id="dm-link-container"></span>
 
                 </div>
                 <!-- Navbar links (right) -->
-                <div class="hidden md:flex">
-                    <a href="work.html" class="text-black hover:text-gray-500 font-semibold px-4">Work</a>
-                    <a href="about.html" class="text-black hover:text-gray-500 font-semibold px-4">About</a>
-                    <a href="gallery.html" class="text-black hover:text-gray-500 font-semibold px-4">Gallery</a>
-                    <a href="contact.html" class="text-black hover:text-gray-500 font-semibold px-4">Contact</a>
+                <div class="hidden md:flex" id="navigation">
+                    <!-- Links will be dynamically generated here -->
                 </div>
                 <!-- Hamburger icon for mobile -->
                 <div class="md:hidden">
@@ -62,11 +50,8 @@
             </div>
             <!-- Mobile menu (hidden by default) -->
             <div id="mobile-menu" class="md:hidden hidden bg-black">
-                <div class="px-2 py-4">
-                    <a href="work.html" class="block text-white hover:text-gray-500 px-4 py-2">Work</a>
-                    <a href="about.html" class="block text-white hover:text-gray-500 px-4 py-2">About</a>
-                    <a href="gallery.html" class="block text-white hover:text-gray-500 px-4 py-2">Gallery</a>
-                    <a href="contact.html" class="block text-white hover:text-gray-500 px-4 py-2">Contact</a>
+                <div class="px-2 py-4" id="mobile-menu-content">
+                    <!-- Links will be dynamically generated here -->
                 </div>
             </div>
         </nav>
@@ -142,6 +127,47 @@
     </div> <!-- Closing container div -->
     <script>
         document.getElementById("copyrightYear").innerHTML = new Date().getFullYear();
+    </script>
+
+    <script>
+        // Define the list of pages
+        const pages = [
+            { title: 'Work', url: 'work.html' },
+            { title: 'About', url: 'about.html' },
+            { title: 'Gallery', url: 'gallery.html' },
+            { title: 'Contact', url: 'contact.html' }
+        ];
+
+        // Function to generate navigation and mobile menu links
+        function generateLinks(containerId, linksClassName) {
+            const container = document.getElementById(containerId);
+            const fragment = document.createDocumentFragment();
+            pages.forEach(page => {
+                const link = document.createElement('a');
+                link.href = page.url;
+                link.textContent = page.title;
+                link.className = linksClassName;
+                fragment.appendChild(link);
+            });
+            container.appendChild(fragment);
+        }
+
+        // Function to generate DM link
+        function generateDMLink() {
+            const dmLinkContainer = document.getElementById('dm-link-container');
+            const dmLink = document.createElement('a');
+            dmLink.href = 'index.html';
+            dmLink.textContent = 'DM';
+            dmLink.className = 'text-black text-lg font-semibold hover:text-gray-500 px-4';
+            const span = document.createElement('span');
+            span.appendChild(dmLink);
+            dmLinkContainer.appendChild(span);
+        }
+
+        // Call the functions to generate links
+        generateLinks('navigation', 'text-lg text-black hover:text-gray-500 font-semibold px-4');
+        generateLinks('mobile-menu-content', 'block text-white hover:text-gray-500 px-4 py-2');
+        generateDMLink();
     </script>
 
     <script>

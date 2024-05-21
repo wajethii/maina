@@ -4,9 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maina-Mwangi-UI-Designer</title>
+    <title>About Dennis Mwangi - UI Designer</title>
+    <meta name="description"
+        content="Discover Dennis Mwangi's journey as a skilled UI designer. Explore his background, expertise, and creative approach to design, showcasing a passion for creating intuitive and visually appealing user interfaces.">
+    <meta name="keywords"
+        content="ui designer, Dennis Mwangi, about ui designer, front end developer, web designer, Dennis Mwangi bio">
+    <meta property="og:title" content="About Dennis Mwangi - UI Designer">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Discover Dennis Mwangi's journey as a skilled UI designer. Explore his background, expertise, and creative approach to design, showcasing a passion for creating intuitive and visually appealing user interfaces.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="About Dennis Mwangi - UI Designer">
+    <meta property="twitter:description"
+        content="Discover Dennis Mwangi's journey as a skilled UI designer. Explore his background, expertise, and creative approach to design, showcasing a passion for creating intuitive and visually appealing user interfaces.">
+    <!-- Add twitter:image and og:image if applicable -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 
 <body class="bg-white">
     <!-- Container div to wrap entire content -->
@@ -17,16 +31,12 @@
             <div class="container mx-auto flex justify-between items-center">
                 <!-- Logo (left) -->
                 <div class="flex items-center">
-                    <span><a href="index.html"
-                            class="text-black text-lg font-semibold hover:text-gray-500 px-4">DM</a></span>
+                    <span id="dm-link-container"></span>
 
                 </div>
                 <!-- Navbar links (right) -->
-                <div class="hidden md:flex">
-                    <a href="work.html" class="text-black hover:text-gray-500 font-semibold px-4">Work</a>
-                    <a href="about.html" class="text-black hover:text-gray-500 font-semibold px-4">About</a>
-                    <a href="gallery.html" class="text-black hover:text-gray-500 font-semibold px-4">Gallery</a>
-                    <a href="contact.html" class="text-black hover:text-gray-500 font-semibold px-4">Contact</a>
+                <div class="hidden md:flex" id="navigation">
+                    <!-- Links will be dynamically generated here -->
                 </div>
                 <!-- Hamburger icon for mobile -->
                 <div class="md:hidden">
@@ -40,15 +50,11 @@
             </div>
             <!-- Mobile menu (hidden by default) -->
             <div id="mobile-menu" class="md:hidden hidden bg-black">
-                <div class="px-2 py-4">
-                    <a href="work.html" class="block text-white hover:text-gray-500 px-4 py-2">Work</a>
-                    <a href="about.html" class="block text-white hover:text-gray-500 px-4 py-2">About</a>
-                    <a href="gallery.html" class="block text-white hover:text-gray-500 px-4 py-2">Gallery</a>
-                    <a href="contact.html" class="block text-white hover:text-gray-500 px-4 py-2">Contact</a>
+                <div class="px-2 py-4" id="mobile-menu-content">
+                    <!-- Links will be dynamically generated here -->
                 </div>
             </div>
         </nav>
-
         <!-- Page content -->
         <div class="h-screen flex justify-start items-center">
             <div class="p-4">
@@ -68,22 +74,17 @@
         </div>
         <!-- Why choose Me -->
         <div class="bg-white p-8 rounded-t-xl">
-            <div class="columns-1 flex flex-wrap mt-10 mb-8">
-                <div class="w-full md:w-4/4 mb-8 flex justify-start items-start">
-                    <div class="w-full md:w-3/4">
-                        <p class="text-lg text-gray-700 leading-relaxed">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Nullam convallis, libero non tristique viverra, dui justo eleifend arcu, eu
-                            posuere lorem risus at mi.</p>
-                        <p class="text-lg text-gray-700 leading-relaxed">Fusce vel risus at eros dignissim vehicula. In
-                            varius, sapien nec rhoncus cursus, nisl urna sodales mauris, sit amet dictum nulla sem eget
-                            neque.</p>
-                        <p class="text-lg text-gray-700 leading-relaxed">Fusce vel risus at eros dignissim vehicula. In
-                            varius, sapien nec rhoncus cursus, nisl urna sodales mauris, sit amet dictum nulla sem eget
-                            neque.</p>
-                        <p class="text-lg text-gray-700 leading-relaxed">Fusce vel risus at eros dignissim vehicula. In
-                            varius, sapien nec rhoncus cursus, nisl urna sodales mauris, sit amet dictum nulla sem eget
-                            neque.</p>
-                    </div>
+            <div class="mt-10 mb-8">
+                <div class="w-full md:col-span-2 mb-8 flex justify-center items-center">
+                    <p class="text-lg text-gray-700 text-pretty leading-relaxed md:col-span-3">Welcome to my creative
+                        realm! I'm Dennis Maina,
+                        a dedicated UI/UX Designer. Enthusiastic about the harmony of aesthetics and functionality,
+                        I specialize in crafting seamless digital experiences that make an impact. From wireframes
+                        to pixel-perfect designs, I invest my passion into every project, ensuring intuitive
+                        navigation and stunning visuals. I find joy in crafting digital solutions that not only meet
+                        but exceed expectations. My journey in the realm of UI/UX design is driven by a relentless
+                        pursuit of innovation and a deep-seated commitment to user-centric solutions. Dive into my
+                        portfolio, and let's collaborate to enhance your digital presence together!</p>
                 </div>
             </div>
         </div>
@@ -101,19 +102,21 @@
         </div>
         <!-- Why choose Me -->
         <div class="bg-white p-8 rounded-t-xl">
-            <h3 class="text-4xl text-pretty md:text-5xl lg:text-6xl">I dare where others don’t</h3>
-            <div class="columns-3xs flex flex-wrap mt-10 mb-8">
-                <div class="w-full md:w-3/4 mb-8 flex justify-center items-center">
-                    <div class="w-full">
-                        <p class="text-lg text-gray-700 leading-relaxed">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Nullam convallis, libero non tristique viverra, dui justo eleifend arcu, eu
-                            posuere lorem risus at mi.</p>
-                        <p class="text-lg text-gray-700 leading-relaxed">Fusce vel risus at eros dignissim vehicula. In
-                            varius, sapien nec rhoncus cursus, nisl urna sodales mauris, sit amet dictum nulla sem eget
-                            neque.</p>
-                    </div>
+            <h3 class="text-4xl text-pretty md:text-5xl lg:text-6xl font-semibold">I dare where others don’t</h3>
+            <div class="mt-10 mb-8">
+                <div class="w-full md:col-span-2 mb-8 flex justify-center items-center">
+                    <p class="text-lg text-gray-700 text-pretty leading-relaxed md:col-span-3">Welcome to my creative
+                        realm! I'm Dennis Maina,
+                        a dedicated UI/UX Designer. Enthusiastic about the harmony of aesthetics and functionality,
+                        I specialize in crafting seamless digital experiences that make an impact. From wireframes
+                        to pixel-perfect designs, I invest my passion into every project, ensuring intuitive
+                        navigation and stunning visuals. I find joy in crafting digital solutions that not only meet
+                        but exceed expectations. My journey in the realm of UI/UX design is driven by a relentless
+                        pursuit of innovation and a deep-seated commitment to user-centric solutions. Dive into my
+                        portfolio, and let's collaborate to enhance your digital presence together!</p>
                 </div>
             </div>
+
         </div>
         <!-- Footer -->
         <footer class="bg-black text-white py-8 px-4 rounded-t-3xl">
@@ -151,7 +154,44 @@
 
     </div> <!-- Closing container div -->
     <script>
-        document.getElementById("copyrightYear").innerHTML = new Date().getFullYear();
+        // Define the list of pages
+        const pages = [
+            { title: 'Work', url: 'work.html' },
+            { title: 'About', url: 'about.html' },
+            { title: 'Gallery', url: 'gallery.html' },
+            { title: 'Contact', url: 'contact.html' }
+        ];
+
+        // Function to generate navigation and mobile menu links
+        function generateLinks(containerId, linksClassName) {
+            const container = document.getElementById(containerId);
+            const fragment = document.createDocumentFragment();
+            pages.forEach(page => {
+                const link = document.createElement('a');
+                link.href = page.url;
+                link.textContent = page.title;
+                link.className = linksClassName;
+                fragment.appendChild(link);
+            });
+            container.appendChild(fragment);
+        }
+
+        // Function to generate DM link
+        function generateDMLink() {
+            const dmLinkContainer = document.getElementById('dm-link-container');
+            const dmLink = document.createElement('a');
+            dmLink.href = 'index.html';
+            dmLink.textContent = 'DM';
+            dmLink.className = 'text-black text-lg font-semibold hover:text-gray-500 px-4';
+            const span = document.createElement('span');
+            span.appendChild(dmLink);
+            dmLinkContainer.appendChild(span);
+        }
+
+        // Call the functions to generate links
+        generateLinks('navigation', 'text-lg text-black hover:text-gray-500 font-semibold px-4');
+        generateLinks('mobile-menu-content', 'block text-white hover:text-gray-500 px-4 py-2');
+        generateDMLink();
     </script>
 
     <script>

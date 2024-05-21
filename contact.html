@@ -4,9 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maina-Mwangi-Contact</title>
+    <title>Contact Dennis Mwangi - UI Designer</title>
+    <meta name="description"
+        content="Get in touch with Dennis Mwangi, a skilled UI/UX designer, to discuss your project needs or collaboration opportunities.">
+    <meta name="keywords" content="contact, Dennis Mwangi, UI/UX designer, collaboration, project, inquiry">
+    <meta property="og:title" content="Contact Dennis Mwangi - UI/UX Designer">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Get in touch with Dennis Mwangi, a skilled UI/UX designer, to discuss your project needs or collaboration opportunities.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Contact Dennis Mwangi - UI/UX Designer">
+    <meta property="twitter:description"
+        content="Get in touch with Dennis Mwangi, a skilled UI/UX designer, to discuss your project needs or collaboration opportunities.">
+
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Additional CSS or scripts can be added here -->
 </head>
+
 
 <body class="bg-white">
     <!-- Container div to wrap entire content -->
@@ -17,16 +31,12 @@
             <div class="container mx-auto flex justify-between items-center">
                 <!-- Logo (left) -->
                 <div class="flex items-center">
-                    <span><a href="index.html"
-                            class="text-black text-lg font-semibold hover:text-gray-500 px-4">DM</a></span>
+                    <span id="dm-link-container"></span>
 
                 </div>
                 <!-- Navbar links (right) -->
-                <div class="hidden md:flex">
-                    <a href="work.html" class="text-black hover:text-gray-500 font-semibold px-4">Work</a>
-                    <a href="about.html" class="text-black hover:text-gray-500 font-semibold px-4">About</a>
-                    <a href="gallery.html" class="text-black hover:text-gray-500 font-semibold px-4">Gallery</a>
-                    <a href="contact.html" class="text-black hover:text-gray-500 font-semibold px-4">Contact</a>
+                <div class="hidden md:flex" id="navigation">
+                    <!-- Links will be dynamically generated here -->
                 </div>
                 <!-- Hamburger icon for mobile -->
                 <div class="md:hidden">
@@ -40,11 +50,8 @@
             </div>
             <!-- Mobile menu (hidden by default) -->
             <div id="mobile-menu" class="md:hidden hidden bg-black">
-                <div class="px-2 py-4">
-                    <a href="work.html" class="block text-white hover:text-gray-500 px-4 py-2">Work</a>
-                    <a href="about.html" class="block text-white hover:text-gray-500 px-4 py-2">About</a>
-                    <a href="gallery.html" class="block text-white hover:text-gray-500 px-4 py-2">Gallery</a>
-                    <a href="contact.html" class="block text-white hover:text-gray-500 px-4 py-2">Contact</a>
+                <div class="px-2 py-4" id="mobile-menu-content">
+                    <!-- Links will be dynamically generated here -->
                 </div>
             </div>
         </nav>
@@ -65,7 +72,7 @@
         <!-- Contact Me -->
         <div class="bg-white p-8 rounded-t-xl">
             <div class="mb-4">
-                <p class="text-lg">
+                <p class="text-3xl">
                     <a href="https://api.whatsapp.com/send?phone=+254717340777" target="_blank"
                         rel="noopener noreferrer" class="text-black underline">+254 717 340 777</a>
                 </p>
@@ -73,7 +80,7 @@
             <div>
                 <p>
                     <a href="src/WebDesignRateCard.pdf" target="_blank" rel="noopener noreferrer"
-                        class="text-lg text-black  underline">Rate Card</a>
+                        class="text-3xl text-black  underline">Rate Card</a>
                 </p>
             </div>
         </div>
@@ -116,7 +123,44 @@
 
     </div> <!-- Closing container div -->
     <script>
-        document.getElementById("copyrightYear").innerHTML = new Date().getFullYear();
+        // Define the list of pages
+        const pages = [
+            { title: 'Work', url: 'work.html' },
+            { title: 'About', url: 'about.html' },
+            { title: 'Gallery', url: 'gallery.html' },
+            { title: 'Contact', url: 'contact.html' }
+        ];
+
+        // Function to generate navigation and mobile menu links
+        function generateLinks(containerId, linksClassName) {
+            const container = document.getElementById(containerId);
+            const fragment = document.createDocumentFragment();
+            pages.forEach(page => {
+                const link = document.createElement('a');
+                link.href = page.url;
+                link.textContent = page.title;
+                link.className = linksClassName;
+                fragment.appendChild(link);
+            });
+            container.appendChild(fragment);
+        }
+
+        // Function to generate DM link
+        function generateDMLink() {
+            const dmLinkContainer = document.getElementById('dm-link-container');
+            const dmLink = document.createElement('a');
+            dmLink.href = 'index.html';
+            dmLink.textContent = 'DM';
+            dmLink.className = 'text-black text-lg font-semibold hover:text-gray-500 px-4';
+            const span = document.createElement('span');
+            span.appendChild(dmLink);
+            dmLinkContainer.appendChild(span);
+        }
+
+        // Call the functions to generate links
+        generateLinks('navigation', 'text-lg text-black hover:text-gray-500 font-semibold px-4');
+        generateLinks('mobile-menu-content', 'block text-white hover:text-gray-500 px-4 py-2');
+        generateDMLink();
     </script>
 
     <script>

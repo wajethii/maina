@@ -4,9 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maina-Mwangi-Work</title>
+    <title>Dennis Mwangi Work Portfolio</title>
+    <meta name="description"
+        content="Explore Dennis Mwangi's portfolio showcasing diverse expertise in UX/UI design, product development, and front-end solutions. Discover compelling projects demonstrating creativity, functionality, and client success stories.">
+    <meta name="keywords"
+        content="ui/ux designer, top ux designer, best ux designer, ux designer Kenya, product designer Nairobi, front end developer Nairobi, web designer Kenya, web development Kenya, ux design Nairobi, ui design Nairobi, front end developer Nairobi, user experience design Nairobi, creative project portfolio, digital experience examples, innovative web solutions, client success stories">
+    <meta property="og:title" content="Dennis Mwangi's Work Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Explore Dennis Mwangi's portfolio showcasing diverse expertise in UX/UI design, product development, and front-end solutions. Discover compelling projects demonstrating creativity, functionality, and client success stories.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Dennis Mwangi's Work Portfolio">
+    <meta property="twitter:description"
+        content="Explore Dennis Mwangi's portfolio showcasing diverse expertise in UX/UI design, product development, and front-end solutions. Discover compelling projects demonstrating creativity, functionality, and client success stories.">
+    <!-- Add twitter:image and og:image if applicable -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 
 <body class="bg-white">
     <!-- Container div to wrap entire content -->
@@ -17,16 +31,12 @@
             <div class="container mx-auto flex justify-between items-center">
                 <!-- Logo (left) -->
                 <div class="flex items-center">
-                    <span><a href="index.html"
-                            class="text-black text-lg font-semibold hover:text-gray-500 px-4">DM</a></span>
+                    <span id="dm-link-container"></span>
 
                 </div>
                 <!-- Navbar links (right) -->
-                <div class="hidden md:flex">
-                    <a href="work.html" class="text-black hover:text-gray-500 font-semibold px-4">Work</a>
-                    <a href="about.html" class="text-black hover:text-gray-500 font-semibold px-4">About</a>
-                    <a href="gallery.html" class="text-black hover:text-gray-500 font-semibold px-4">Gallery</a>
-                    <a href="contact.html" class="text-black hover:text-gray-500 font-semibold px-4">Contact</a>
+                <div class="hidden md:flex" id="navigation">
+                    <!-- Links will be dynamically generated here -->
                 </div>
                 <!-- Hamburger icon for mobile -->
                 <div class="md:hidden">
@@ -40,11 +50,8 @@
             </div>
             <!-- Mobile menu (hidden by default) -->
             <div id="mobile-menu" class="md:hidden hidden bg-black">
-                <div class="px-2 py-4">
-                    <a href="work.html" class="block text-white hover:text-gray-500 px-4 py-2">Work</a>
-                    <a href="about.html" class="block text-white hover:text-gray-500 px-4 py-2">About</a>
-                    <a href="gallery.html" class="block text-white hover:text-gray-500 px-4 py-2">Gallery</a>
-                    <a href="contact.html" class="block text-white hover:text-gray-500 px-4 py-2">Contact</a>
+                <div class="px-2 py-4" id="mobile-menu-content">
+                    <!-- Links will be dynamically generated here -->
                 </div>
             </div>
         </nav>
@@ -55,56 +62,8 @@
                 <img src="src/arrow-down.svg" class="w-8 h-auto ml-2 md:w-6 md:ml-4 lg:w-10" alt="Arrow Icon">
             </div>
 
-            <div class="columns-3xs flex flex-wrap mt-8">
-                <div class="w-full md:w-1/2 mb-8">
-                    <a href="#" class="block">
-                        <img class="rounded-xl w-full aspect-video transform transition duration-300 hover:scale-105 cursor-pointer"
-                            src="images/three.webp" />
-                        <h2 class="mt-4 hover:text-blue-500 text-3xl text-pretty md:text-2xl lg:text-xl">Description of
-                            Image 1</h2>
-                    </a>
-                </div>
-                <div class="w-full md:w-1/2 mb-8">
-                    <a href="#" class="block">
-                        <img class="rounded-xl w-full aspect-square transform transition duration-300 hover:scale-105 cursor-pointer"
-                            src="images/four.webp" />
-                        <h2 class="mt-4 hover:text-blue-500 text-3xl text-pretty md:text-4xl lg:text-xl">Description of
-                            Image 2</h2>
-                    </a>
-                </div>
-                <div class="w-full md:w-1/2 mb-8">
-                    <a href="#" class="block">
-                        <img class="rounded-xl w-full aspect-video transform transition duration-300 hover:scale-105 cursor-pointer"
-                            src="images/three.webp" />
-                        <h2 class="mt-4 hover:text-blue-500 text-3xl text-pretty md:text-4xl lg:text-xl">Description of
-                            Image 3</h2>
-                    </a>
-                </div>
-                <div class="w-full md:w-1/2 mb-8">
-                    <a href="#" class="block">
-                        <img class="rounded-xl w-full aspect-square transform transition duration-300 hover:scale-105 cursor-pointer"
-                            src="images/four.webp" />
-                        <h2 class="mt-4 hover:text-blue-500 text-3xl text-pretty md:text-4xl lg:text-xl">Description of
-                            Image 4</h2>
-                    </a>
-                </div>
-                <div class="w-full md:w-1/2 mb-8">
-                    <a href="#" class="block">
-                        <img class="rounded-xl w-full aspect-video transform transition duration-300 hover:scale-105 cursor-pointer"
-                            src="images/three.webp" />
-                        <h2 class="mt-4 hover:text-blue-500 text-3xl text-pretty md:text-4xl lg:text-xl">Description of
-                            Image 3</h2>
-                    </a>
-                </div>
-                <div class="w-full md:w-1/2 mb-8">
-                    <a href="#" class="block">
-                        <img class="rounded-xl w-full aspect-square transform transition duration-300 hover:scale-105 cursor-pointer"
-                            src="images/four.webp" />
-                        <h2 class="mt-4 hover:text-blue-500 text-3xl text-pretty md:text-4xl lg:text-xl">Description of
-                            Image 4</h2>
-                    </a>
-                </div>
-                <!-- Add more image and description pairs as needed -->
+            <div class="columns-3xs flex flex-wrap mt-8" id="linksContainer">
+                <!-- Links will be dynamically generated here -->
             </div>
         </div>
 
@@ -144,9 +103,77 @@
 
     </div> <!-- Closing container div -->
     <script>
-        document.getElementById("copyrightYear").innerHTML = new Date().getFullYear();
+        // Define the list of pages
+        const pages = [
+            { title: 'Work', url: 'work.html' },
+            { title: 'About', url: 'about.html' },
+            { title: 'Gallery', url: 'gallery.html' },
+            { title: 'Contact', url: 'contact.html' }
+        ];
+        // Function to generate navigation and mobile menu links
+        function generateLinks(containerId, linksClassName) {
+            const container = document.getElementById(containerId);
+            const fragment = document.createDocumentFragment();
+            pages.forEach(page => {
+                const link = document.createElement('a');
+                link.href = page.url;
+                link.textContent = page.title;
+                link.className = linksClassName;
+                fragment.appendChild(link);
+            });
+            container.appendChild(fragment);
+        }
+        // Function to generate DM link
+        function generateDMLink() {
+            const dmLinkContainer = document.getElementById('dm-link-container');
+            const dmLink = document.createElement('a');
+            dmLink.href = 'index.html';
+            dmLink.textContent = 'DM';
+            dmLink.className = 'text-black text-lg font-semibold hover:text-gray-500 px-4';
+            const span = document.createElement('span');
+            span.appendChild(dmLink);
+            dmLinkContainer.appendChild(span);
+        }
+        // Call the functions to generate links
+        generateLinks('navigation', 'txt-lg text-black hover:text-gray-500 font-semibold px-4');
+        generateLinks('mobile-menu-content', 'block text-white hover:text-gray-500 px-4 py-2');
+        generateDMLink();
     </script>
+    <script>
+        // Define the links data
+        const links = [
+            { href: "mmotor.html", text: "M-motors - Motorcycle Store", imageSrc: "images/three.webp" },
+            { href: "portias.html", text: "Portias - Fashion Store", imageSrc: "images/four.webp" },
+            { href: "iko.html", text: "Iko - Parcel Delivery", imageSrc: "images/three.webp" },
+            { href: "brainn.html", text: "Brainn - Hr Dashboard", imageSrc: "images/four.webp" }
+            // Add more links as needed
+        ];
 
+        // Function to generate links dynamically
+        function generateLinks() {
+            const linksContainer = document.getElementById('linksContainer');
+            links.forEach(linkData => {
+                const linkDiv = document.createElement('div');
+                linkDiv.className = "w-full md:w-1/2 mb-8";
+                const link = document.createElement('a');
+                link.href = linkData.href;
+                link.className = "block";
+                const image = document.createElement('img');
+                image.className = "rounded-xl w-full aspect-video transform transition duration-300 hover:scale-105 cursor-pointer";
+                image.src = linkData.imageSrc;
+                const heading = document.createElement('h2');
+                heading.className = "mt-4 hover:text-blue-500 text-2xl text-pretty md:text-2xl lg:text-3xl";
+                heading.textContent = linkData.text;
+                link.appendChild(image);
+                link.appendChild(heading);
+                linkDiv.appendChild(link);
+                linksContainer.appendChild(linkDiv);
+            });
+        }
+
+        // Call the function to generate links
+        generateLinks();
+    </script>
     <script>
         // JavaScript to toggle mobile menu
         document.getElementById('menu-toggle').addEventListener('click', function () {

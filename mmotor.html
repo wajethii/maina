@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maina-Mwangi-UI-Designer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white">
+    <!-- Container div to wrap entire content -->
+    <div class="mx-auto max-w-screen-lg">
+
+        <!-- Navigation bar -->
+        <nav class="bg-white-900 p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Logo (left) -->
+                <div class="flex items-center">
+                    <span id="dm-link-container"></span>
+
+                </div>
+                <!-- Navbar links (right) -->
+                <div class="hidden md:flex" id="navigation">
+                    <!-- Links will be dynamically generated here -->
+                </div>
+                <!-- Hamburger icon for mobile -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-black hover:text-gray-500 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu (hidden by default) -->
+            <div id="mobile-menu" class="md:hidden hidden bg-black">
+                <div class="px-2 py-4" id="mobile-menu-content">
+                    <!-- Links will be dynamically generated here -->
+                </div>
+            </div>
+        </nav>
+        <!-- Page content -->
+        <div class="h-screen flex justify-start items-center">
+            <div class="p-4">
+                <h3 class="text-7xl text-pretty md:text-7xl lg:text-7xl font-sans  inline-block">M-motors
+                    <span class="block italic">Motorcycle market</span>
+                </h3>
+            </div>
+        </div>
+        <!-- Projects -->
+        <div class="bg-white p-8 rounded-t-xl">
+            <div class="columns-1 flex flex-wrap mt-8">
+                <div class="w-full md:w-1/1 mb-8">
+                    <img class="rounded-xl w-full" src="images/one.webp" />
+                </div>
+
+                <!-- Add more image and description pairs as needed -->
+            </div>
+        </div>
+        <!-- Introduction-->
+        <div class="bg-white p-8 rounded-t-xl">
+            <h4 class=" text-gray-700 text-4xl text-pretty md:text-4xl lg:text-4xl font-normal">Introduction</h4>
+            <div class="mt-10 mb-8">
+                <div class="w-full md:col-span-2 mb-8 flex justify-center items-center">
+                    <p class="text-lg text-gray-700 text-pretty leading-relaxed md:col-span-3">Welcome to my creative
+                        realm! I'm Dennis Maina,
+                        a dedicated UI/UX Designer. Enthusiastic about the harmony of aesthetics and functionality,
+                        I specialize in crafting seamless digital experiences that make an impact. From wireframes
+                        to pixel-perfect designs, I invest my passion into every project, ensuring intuitive
+                        navigation and stunning visuals. I find joy in crafting digital solutions that not only meet
+                        but exceed expectations. My journey in the realm of UI/UX design is driven by a relentless
+                        pursuit of innovation and a deep-seated commitment to user-centric solutions. Dive into my
+                        portfolio, and let's collaborate to enhance your digital presence together!</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="columns-3xs flex flex-wrap mt-8">
+            <div class="w-full md:w-1/2 mb-8">
+
+                <img class="rounded-xl w-full aspect-video" src="images/three.webp" />
+
+            </div>
+            <div class="w-full md:w-1/2 mb-8">
+
+                <img class="rounded-xl w-full aspect-square" src="images/four.webp" />
+            </div>
+            <div class="w-full md:w-1/2 mb-8">
+
+                <img class="rounded-xl w-full aspect-video" src="images/three.webp" />
+
+            </div>
+            <div class="w-full md:w-1/2 mb-8">
+
+                <img class="rounded-xl w-full aspect-square" src="images/four.webp" />
+            </div>
+            <div class="w-full md:w-1/2 mb-8">
+
+                <img class="rounded-xl w-full aspect-video" src="images/three.webp" />
+
+            </div>
+            <div class="w-full md:w-1/2 mb-8">
+
+                <img class="rounded-xl w-full aspect-square" src="images/four.webp" />
+            </div>
+            <!-- Add more image and description pairs as needed -->
+        </div>
+        <!-- Problem Statement-->
+        <div class="bg-white p-8 rounded-t-xl">
+            <h4 class=" text-gray-700 text-4xl text-pretty md:text-4xl lg:text-4xl font-normal">Problem statement</h4>
+            <div class="mt-10 mb-8">
+                <div class="w-full md:col-span-2 mb-8 flex justify-center items-center">
+                    <p class="text-lg text-gray-700 text-pretty leading-relaxed md:col-span-3">Welcome to my creative
+                        realm! I'm Dennis Maina,
+                        a dedicated UI/UX Designer. Enthusiastic about the harmony of aesthetics and functionality,
+                        I specialize in crafting seamless digital experiences that make an impact. From wireframes
+                        to pixel-perfect designs, I invest my passion into every project, ensuring intuitive
+                        navigation and stunning visuals. I find joy in crafting digital solutions that not only meet
+                        but exceed expectations. My journey in the realm of UI/UX design is driven by a relentless
+                        pursuit of innovation and a deep-seated commitment to user-centric solutions. Dive into my
+                        portfolio, and let's collaborate to enhance your digital presence together!</p>
+                </div>
+            </div>
+        </div>
+        <div class="columns-3xs flex flex-wrap mt-8">
+            <div class="w-full md:w-1/2 mb-8">
+                <img class="rounded-xl w-full aspect-video" src="images/three.webp" />
+            </div>
+            <div class="w-full md:w-1/2 mb-8">
+                <img class="rounded-xl w-full aspect-square" src="images/four.webp" />
+            </div>
+            <div class="w-full md:w-1/2 mb-8">
+                <img class="rounded-xl w-full aspect-video" src="images/three.webp" />
+            </div>
+            <div class="w-full md:w-1/2 mb-8">
+                <img class="rounded-xl w-full aspect-square" src="images/four.webp" />
+            </div>
+            <!-- Add more image and description pairs as needed -->
+        </div>
+        <!-- User Experience-->
+        <div class="bg-white p-8 rounded-t-xl">
+            <h4 class=" text-gray-700 text-4xl text-pretty md:text-4xl lg:text-4xl font-normal">User Experience</h4>
+            <div class="mt-10 mb-8">
+                <div class="w-full md:col-span-2 mb-8 flex justify-center items-center">
+                    <p class="text-lg text-gray-700 text-pretty leading-relaxed md:col-span-3">Welcome to my creative
+                        realm! I'm Dennis Maina,
+                        a dedicated UI/UX Designer. Enthusiastic about the harmony of aesthetics and functionality,
+                        I specialize in crafting seamless digital experiences that make an impact. From wireframes
+                        to pixel-perfect designs, I invest my passion into every project, ensuring intuitive
+                        navigation and stunning visuals. I find joy in crafting digital solutions that not only meet
+                        but exceed expectations. My journey in the realm of UI/UX design is driven by a relentless
+                        pursuit of innovation and a deep-seated commitment to user-centric solutions. Dive into my
+                        portfolio, and let's collaborate to enhance your digital presence together!</p>
+                </div>
+            </div>
+        </div>
+        <div class="columns-3xs flex flex-wrap mt-8">
+            <div class="w-full md:w-1/2 mb-8">
+                <img class="rounded-xl w-full aspect-video" src="images/three.webp" />
+            </div>
+            <div class="w-full md:w-1/2 mb-8">
+                <img class="rounded-xl w-full aspect-square" src="images/four.webp" />
+            </div>
+            <div class="w-full md:w-1/2 mb-8">
+                <img class="rounded-xl w-full aspect-video" src="images/three.webp" />
+            </div>
+            <div class="w-full md:w-1/2 mb-8">
+                <img class="rounded-xl w-full aspect-square" src="images/four.webp" />
+            </div>
+            <!-- Add more image and description pairs as needed -->
+        </div>
+        <!-- User -->
+        <div class="bg-white p-8 rounded-t-xl">
+            <h4 class=" text-gray-700 text-4xl text-pretty md:text-4xl lg:text-4xl font-normal">Conclusion</h4>
+            <div class="mt-10 mb-8">
+                <div class="w-full md:col-span-2 mb-8 flex justify-center items-center">
+                    <p class="text-lg text-gray-700 text-pretty leading-relaxed md:col-span-3">Welcome to my creative
+                        realm! I'm Dennis Maina,
+                        a dedicated UI/UX Designer. Enthusiastic about the harmony of aesthetics and functionality,
+                        I specialize in crafting seamless digital experiences that make an impact. From wireframes
+                        to pixel-perfect designs, I invest my passion into every project, ensuring intuitive
+                        navigation and stunning visuals. I find joy in crafting digital solutions that not only meet
+                        but exceed expectations. My journey in the realm of UI/UX design is driven by a relentless
+                        pursuit of innovation and a deep-seated commitment to user-centric solutions. Dive into my
+                        portfolio, and let's collaborate to enhance your digital presence together!</p>
+                </div>
+            </div>
+        </div>
+        <div class="columns-3xs flex flex-wrap mt-8">
+            <div class="w-full md:w-1/2 mb-8">
+                <img class="rounded-xl w-full aspect-video" src="images/three.webp" />
+            </div>
+            <div class="w-full md:w-1/2 mb-8">
+                <img class="rounded-xl w-full aspect-square" src="images/four.webp" />
+            </div>
+            <!-- Add more image and description pairs as needed -->
+        </div>
+    </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8 px-4 rounded-t-3xl">
+        <div class="container mx-auto flex flex-col items-start justify-start px-4">
+            <h1 class="text-2xl md:text-3xl mb-4">Follow Me</h1>
+            <div class="flex flex-col items-start w-full mt-10">
+                <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer"
+                    class="flex justify-between items-center w-full text-white hover:bg-white hover:text-black text-lg mb-2 py-2 px-4">
+                    <span>Behance</span>
+                    <img src="src/arrow-right-top.svg" class="h-6 w-6 fill-current ml-2" alt="Behance icon">
+                </a>
+                <div class="divider mb-2 border-t border-white"></div>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                    class="flex justify-between items-center w-full text-white hover:bg-white hover:text-black text-lg mb-2 py-2 px-4">
+                    <span>LinkedIn</span>
+                    <img src="src/arrow-right-top.svg" class="h-6 w-6 fill-current ml-2" alt="LinkedIn icon">
+                </a>
+                <div class="divider mb-2 border-t border-white"></div>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+                    class="flex justify-between items-center w-full text-white hover:bg-white hover:text-black text-lg mb-2 py-2 px-4">
+                    <span>Twitter</span>
+                    <img src="src/arrow-right-top.svg" class="h-6 w-6 fill-current ml-2" alt="Twitter icon">
+                </a>
+                <div class="divider mb-2 border-t border-white"></div>
+                <a href="https://medium.com/" target="_blank" rel="noopener noreferrer"
+                    class="flex justify-between items-center w-full text-white hover:bg-white hover:text-black text-lg mb-2 py-2 px-4">
+                    <span>Medium</span>
+                    <img src="src/arrow-right-top.svg" class="h-6 w-6 fill-current ml-2" alt="Medium icon">
+                </a>
+            </div>
+            <p class="mt-8 text-sm text-center">&copy; <span id="copyrightYear"></span>
+                Dennis Mwangi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    </div> <!-- Closing container div -->
+    <script>
+        // Define the list of pages
+        const pages = [
+            { title: 'Work', url: 'work.html' },
+            { title: 'About', url: 'about.html' },
+            { title: 'Gallery', url: 'gallery.html' },
+            { title: 'Contact', url: 'contact.html' }
+        ];
+
+        // Function to generate navigation and mobile menu links
+        function generateLinks(containerId, linksClassName) {
+            const container = document.getElementById(containerId);
+            const fragment = document.createDocumentFragment();
+            pages.forEach(page => {
+                const link = document.createElement('a');
+                link.href = page.url;
+                link.textContent = page.title;
+                link.className = linksClassName;
+                fragment.appendChild(link);
+            });
+            container.appendChild(fragment);
+        }
+
+        // Function to generate DM link
+        function generateDMLink() {
+            const dmLinkContainer = document.getElementById('dm-link-container');
+            const dmLink = document.createElement('a');
+            dmLink.href = 'index.html';
+            dmLink.textContent = 'DM';
+            dmLink.className = 'text-black text-lg font-semibold hover:text-gray-500 px-4';
+            const span = document.createElement('span');
+            span.appendChild(dmLink);
+            dmLinkContainer.appendChild(span);
+        }
+
+        // Call the functions to generate links
+        generateLinks('navigation', 'text-lg text-black hover:text-gray-500 font-semibold px-4');
+        generateLinks('mobile-menu-content', 'block text-white hover:text-gray-500 px-4 py-2');
+        generateDMLink();
+    </script>
+
+    <script>
+        // JavaScript to toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
