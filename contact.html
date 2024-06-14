@@ -1,174 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Dennis Mwangi - UI Designer</title>
-    <meta name="description"
-        content="Get in touch with Dennis Mwangi, a skilled UI/UX designer, to discuss your project needs or collaboration opportunities.">
-    <meta name="keywords" content="contact, Dennis Mwangi, UI/UX designer, collaboration, project, inquiry">
-    <meta property="og:title" content="Contact Dennis Mwangi - UI/UX Designer">
-    <meta property="og:type" content="website">
-    <meta property="og:description"
-        content="Get in touch with Dennis Mwangi, a skilled UI/UX designer, to discuss your project needs or collaboration opportunities.">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Contact Dennis Mwangi - UI/UX Designer">
-    <meta property="twitter:description"
-        content="Get in touch with Dennis Mwangi, a skilled UI/UX designer, to discuss your project needs or collaboration opportunities.">
+    <meta
+      name="description"
+      content="Get in touch with Dennis Mwangi, a skilled UI/UX designer, to discuss your project needs or collaboration opportunities."
+    />
+    <meta
+      name="keywords"
+      content="contact, Dennis Mwangi, UI/UX designer, collaboration, project, inquiry"
+    />
+    <meta
+      property="og:title"
+      content="Contact Dennis Mwangi - UI/UX Designer"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Get in touch with Dennis Mwangi, a skilled UI/UX designer, to discuss your project needs or collaboration opportunities."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:title"
+      content="Contact Dennis Mwangi - UI/UX Designer"
+    />
+    <meta
+      property="twitter:description"
+      content="Get in touch with Dennis Mwangi, a skilled UI/UX designer, to discuss your project needs or collaboration opportunities."
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Additional CSS or scripts can be added here -->
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Questrial", sans-serif;
+      }
 
+      /* Add your other CSS rules here */
+    </style>
+  </head>
 
-<body class="bg-white">
+  <body class="bg-white">
     <!-- Container div to wrap entire content -->
-    <div class="mx-auto max-w-screen-lg">
-
-        <!-- Navigation bar -->
-        <nav class="bg-white-900 p-4">
-            <div class="container mx-auto flex justify-between items-center">
-                <!-- Logo (left) -->
-                <div class="flex items-center">
-                    <span id="dm-link-container"></span>
-
-                </div>
-                <!-- Navbar links (right) -->
-                <div class="hidden md:flex" id="navigation">
-                    <!-- Links will be dynamically generated here -->
-                </div>
-                <!-- Hamburger icon for mobile -->
-                <div class="md:hidden">
-                    <button id="menu-toggle" class="text-black hover:text-gray-500 focus:outline-none">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <!-- Mobile menu (hidden by default) -->
-            <div id="mobile-menu" class="md:hidden hidden bg-black">
-                <div class="px-2 py-4" id="mobile-menu-content">
-                    <!-- Links will be dynamically generated here -->
-                </div>
-            </div>
-        </nav>
-
-        <!-- Page content -->
-        <div class="h-screen flex justify-start items-center">
-            <div class="p-4">
-                <h1 class="text-6xl text-pretty md:text-5xl lg:text-8xl inline-block">Hey <img src="src/Wave.png"
-                        class="h-16 w-16 ml-2 inline sm:h-20 sm:w-20 md:h-22 md:w-22 lg:h-22 lg:w-22 xl:h-22 xl:w-22"
-                        alt="Your Image">
-
-                    <span class="block">Let's get started</span>
-                </h1>
-
-            </div>
+    <div class="mx-auto max-w-screen-2xl">
+      <!-- Navigation bar -->
+      <nav class="bg-white-900 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Logo (left) -->
+          <div class="flex items-center">
+            <span id="dm-link-container"></span>
+          </div>
+          <!-- Navbar links (right) -->
+          <div class="hidden md:flex" id="navigation">
+            <!-- Links will be dynamically generated here -->
+          </div>
+          <!-- Hamburger icon for mobile -->
+          <div class="md:hidden">
+            <button
+              id="menu-toggle"
+              class="text-black hover:text-gray-500 focus:outline-none"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
-
-        <!-- Contact Me -->
-        <div class="bg-white p-8 rounded-t-xl">
-            <div class="mb-4">
-                <p class="text-3xl">
-                    <a href="https://api.whatsapp.com/send?phone=+254717340777" target="_blank"
-                        rel="noopener noreferrer" class="text-black underline">+254 717 340 777</a>
-                </p>
-            </div>
-            <div>
-                <p>
-                    <a href="src/WebDesignRateCard.pdf" target="_blank" rel="noopener noreferrer"
-                        class="text-3xl text-black  underline">Rate Card</a>
-                </p>
-            </div>
+        <!-- Mobile menu (hidden by default) -->
+        <div id="mobile-menu" class="md:hidden hidden bg-black">
+          <div class="px-2 py-4" id="mobile-menu-content">
+            <!-- Links will be dynamically generated here -->
+          </div>
         </div>
+      </nav>
 
+      <!-- Page content -->
+      <div class="h-screen flex justify-start items-center">
+        <div class="p-4">
+          <h1 class="text-6xl text-pretty md:text-5xl lg:text-8xl inline-block">
+            Hey
+            <img
+              src="src/Wave.png"
+              class="h-16 w-16 ml-2 inline sm:h-20 sm:w-20 md:h-22 md:w-22 lg:h-22 lg:w-22 xl:h-22 xl:w-22"
+              alt="Your Image"
+            />
 
-        <!-- Footer -->
-        <footer class="bg-black text-white py-8 px-4 rounded-t-3xl">
-            <div class="container mx-auto flex flex-col items-start justify-start px-4">
-                <h1 class="text-2xl md:text-3xl mb-4">Follow Me</h1>
-                <div class="flex flex-col items-start w-full mt-10">
-                    <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer"
-                        class="flex justify-between items-center w-full text-white hover:bg-white hover:text-black text-lg mb-2 py-2 px-4">
-                        <span>Behance</span>
-                        <img src="src/arrow-right-top.svg" class="h-6 w-6 fill-current ml-2" alt="Behance icon">
-                    </a>
-                    <div class="divider mb-2 border-t border-white"></div>
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
-                        class="flex justify-between items-center w-full text-white hover:bg-white hover:text-black text-lg mb-2 py-2 px-4">
-                        <span>LinkedIn</span>
-                        <img src="src/arrow-right-top.svg" class="h-6 w-6 fill-current ml-2" alt="LinkedIn icon">
-                    </a>
-                    <div class="divider mb-2 border-t border-white"></div>
-                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
-                        class="flex justify-between items-center w-full text-white hover:bg-white hover:text-black text-lg mb-2 py-2 px-4">
-                        <span>Twitter</span>
-                        <img src="src/arrow-right-top.svg" class="h-6 w-6 fill-current ml-2" alt="Twitter icon">
-                    </a>
-                    <div class="divider mb-2 border-t border-white"></div>
-                    <a href="https://medium.com/" target="_blank" rel="noopener noreferrer"
-                        class="flex justify-between items-center w-full text-white hover:bg-white hover:text-black text-lg mb-2 py-2 px-4">
-                        <span>Medium</span>
-                        <img src="src/arrow-right-top.svg" class="h-6 w-6 fill-current ml-2" alt="Medium icon">
-                    </a>
-                </div>
-                <p class="mt-8 text-sm text-center">&copy; <span id="copyrightYear"></span>
-                    Dennis Mwangi. All rights reserved.</p>
-            </div>
-        </footer>
+            <span class="block">Let's get started</span>
+          </h1>
+        </div>
+      </div>
 
+      <!-- Contact Me -->
+      <div class="bg-white p-8 rounded-t-xl">
+        <div class="mb-4">
+          <p class="text-3xl">
+            <a
+              href="https://api.whatsapp.com/send?phone=+254717340777"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-black underline hover:text-green-500"
+              >+254 717 340 777</a
+            >
+          </p>
+        </div>
+        <div>
+          <p>
+            <a
+              href="src/WebDesignRateCard.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-3xl text-black hover:text-green-500 underline"
+              >Rate Card</a
+            >
+          </p>
+        </div>
+      </div>
 
-    </div> <!-- Closing container div -->
+      <footer class="bg-black text-white py-8 px-4 rounded-t-3xl">
+        <div
+          class="container mx-auto flex flex-col items-start justify-start px-4"
+        >
+          <h1 class="text-2xl md:text-3xl mb-4">Follow Me</h1>
+          <div class="flex flex-col items-start w-full mt-10">
+            <a
+              href="https://www.behance.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex justify-between items-center w-full text-white hover:bg-green-500 text-lg mb-2 py-2 px-4"
+            >
+              <span>Behance</span>
+              <img
+                src="src/arrow-right-top.svg"
+                class="h-6 w-6 fill-current ml-2"
+                alt="Behance icon"
+              />
+            </a>
+            <div class="divider mb-2 border-t border-white"></div>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex justify-between items-center w-full text-white hover:bg-green-500 text-lg mb-2 py-2 px-4"
+            >
+              <span>LinkedIn</span>
+              <img
+                src="src/arrow-right-top.svg"
+                class="h-6 w-6 fill-current ml-2"
+                alt="LinkedIn icon"
+              />
+            </a>
+            <div class="divider mb-2 border-t border-white"></div>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex justify-between items-center w-full text-white hover:bg-green-500 text-lg mb-2 py-2 px-4"
+            >
+              <span>Twitter</span>
+              <img
+                src="src/arrow-right-top.svg"
+                class="h-6 w-6 fill-current ml-2"
+                alt="Twitter icon"
+              />
+            </a>
+            <div class="divider mb-2 border-t border-white"></div>
+            <a
+              href="https://medium.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex justify-between items-center w-full text-white hover:bg-green-500 text-lg mb-2 py-2 px-4"
+            >
+              <span>Medium</span>
+              <img
+                src="src/arrow-right-top.svg"
+                class="h-6 w-6 fill-current ml-2"
+                alt="Medium icon"
+              />
+            </a>
+          </div>
+          <div class="w-full items-center">
+            <p class="mt-8 text-sm text-center">
+              &copy; <span id="copyrightYear"></span> Dennis Mwangi. All rights
+              reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Closing container div -->
     <script>
-        // Define the list of pages
-        const pages = [
-            { title: 'Work', url: 'work.html' },
-            { title: 'About', url: 'about.html' },
-            { title: 'Gallery', url: 'gallery.html' },
-            { title: 'Contact', url: 'contact.html' }
-        ];
-
-        // Function to generate navigation and mobile menu links
-        function generateLinks(containerId, linksClassName) {
-            const container = document.getElementById(containerId);
-            const fragment = document.createDocumentFragment();
-            pages.forEach(page => {
-                const link = document.createElement('a');
-                link.href = page.url;
-                link.textContent = page.title;
-                link.className = linksClassName;
-                fragment.appendChild(link);
-            });
-            container.appendChild(fragment);
-        }
-
-        // Function to generate DM link
-        function generateDMLink() {
-            const dmLinkContainer = document.getElementById('dm-link-container');
-            const dmLink = document.createElement('a');
-            dmLink.href = 'index.html';
-            dmLink.textContent = 'DM';
-            dmLink.className = 'text-black text-lg font-semibold hover:text-gray-500 px-4';
-            const span = document.createElement('span');
-            span.appendChild(dmLink);
-            dmLinkContainer.appendChild(span);
-        }
-
-        // Call the functions to generate links
-        generateLinks('navigation', 'text-lg text-black hover:text-gray-500 font-semibold px-4');
-        generateLinks('mobile-menu-content', 'block text-white hover:text-gray-500 px-4 py-2');
-        generateDMLink();
+      // Define the list of pages
+      const pages = [
+        { title: "Work", url: "work.html" },
+        { title: "About", url: "about.html" },
+        { title: "Gallery", url: "gallery.html" },
+        { title: "Contact", url: "contact.html" },
+      ];
+      // Function to generate navigation and mobile menu links
+      function generateLinks(containerId, linksClassName) {
+        const container = document.getElementById(containerId);
+        const fragment = document.createDocumentFragment();
+        pages.forEach((page) => {
+          const link = document.createElement("a");
+          link.href = page.url;
+          link.textContent = page.title;
+          link.className = linksClassName;
+          fragment.appendChild(link);
+        });
+        container.appendChild(fragment);
+      }
+      // Function to generate DM link
+      function generateDMLink() {
+        const dmLinkContainer = document.getElementById("dm-link-container");
+        const dmLink = document.createElement("a");
+        dmLink.href = "index.html";
+        dmLink.textContent = "DM";
+        dmLink.className =
+          "text-black text-xl font-thin hover:text-green-500 px-4";
+        const span = document.createElement("span");
+        span.appendChild(dmLink);
+        dmLinkContainer.appendChild(span);
+      }
+      // Call the functions to generate links
+      generateLinks(
+        "navigation",
+        "text-xl text-black hover:text-green-500 font-thin px-4"
+      );
+      generateLinks(
+        "mobile-menu-content",
+        "block text-white hover:text-green-500 px-4 py-2"
+      );
+      generateDMLink();
     </script>
 
     <script>
-        // JavaScript to toggle mobile menu
-        document.getElementById('menu-toggle').addEventListener('click', function () {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
+      // JavaScript to toggle mobile menu
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
         });
     </script>
-</body>
-
+  </body>
 </html>

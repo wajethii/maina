@@ -1,185 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dennis Mwangi Work Portfolio</title>
-    <meta name="description"
-        content="Explore Dennis Mwangi's portfolio showcasing diverse expertise in UX/UI design, product development, and front-end solutions. Discover compelling projects demonstrating creativity, functionality, and client success stories.">
-    <meta name="keywords"
-        content="ui/ux designer, top ux designer, best ux designer, ux designer Kenya, product designer Nairobi, front end developer Nairobi, web designer Kenya, web development Kenya, ux design Nairobi, ui design Nairobi, front end developer Nairobi, user experience design Nairobi, creative project portfolio, digital experience examples, innovative web solutions, client success stories">
-    <meta property="og:title" content="Dennis Mwangi's Work Portfolio">
-    <meta property="og:type" content="website">
-    <meta property="og:description"
-        content="Explore Dennis Mwangi's portfolio showcasing diverse expertise in UX/UI design, product development, and front-end solutions. Discover compelling projects demonstrating creativity, functionality, and client success stories.">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Dennis Mwangi's Work Portfolio">
-    <meta property="twitter:description"
-        content="Explore Dennis Mwangi's portfolio showcasing diverse expertise in UX/UI design, product development, and front-end solutions. Discover compelling projects demonstrating creativity, functionality, and client success stories.">
-    <!-- Add twitter:image and og:image if applicable -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
+    <meta
+      name="description"
+      content="Explore Dennis Mwangi's portfolio showcasing diverse expertise in UX/UI design, product development, and front-end solutions. Discover compelling projects demonstrating creativity, functionality, and client success stories."
+    />
+    <meta
+      name="keywords"
+      content="ui/ux designer, top ux designer, best ux designer, ux designer Kenya, product designer Nairobi, front end developer Nairobi, web designer Kenya, web development Kenya, ux design Nairobi, ui design Nairobi, front end developer Nairobi, user experience design Nairobi, creative project portfolio, digital experience examples, innovative web solutions, client success stories"
+    />
+    <meta property="og:title" content="Dennis Mwangi's Work Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Explore Dennis Mwangi's portfolio showcasing diverse expertise in UX/UI design, product development, and front-end solutions. Discover compelling projects demonstrating creativity, functionality, and client success stories."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Dennis Mwangi's Work Portfolio" />
+    <meta
+      property="twitter:description"
+      content="Explore Dennis Mwangi's portfolio showcasing diverse expertise in UX/UI design, product development, and front-end solutions. Discover compelling projects demonstrating creativity, functionality, and client success stories."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Questrial", sans-serif;
+      }
 
+      /* Add your other CSS rules here */
+    </style>
+  </head>
 
-<body class="bg-white">
+  <body class="bg-white">
     <!-- Container div to wrap entire content -->
-    <div class="mx-auto max-w-screen-lg">
-
-        <!-- Navigation bar -->
-        <nav class="bg-white-900 p-4">
-            <div class="container mx-auto flex justify-between items-center">
-                <!-- Logo (left) -->
-                <div class="flex items-center">
-                    <span id="dm-link-container"></span>
-
-                </div>
-                <!-- Navbar links (right) -->
-                <div class="hidden md:flex" id="navigation">
-                    <!-- Links will be dynamically generated here -->
-                </div>
-                <!-- Hamburger icon for mobile -->
-                <div class="md:hidden">
-                    <button id="menu-toggle" class="text-black hover:text-gray-500 focus:outline-none">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <!-- Mobile menu (hidden by default) -->
-            <div id="mobile-menu" class="md:hidden hidden bg-black">
-                <div class="px-2 py-4" id="mobile-menu-content">
-                    <!-- Links will be dynamically generated here -->
-                </div>
-            </div>
-        </nav>
-        <!-- Projects -->
-        <div class="bg-white p-8 py-8 ">
-            <div class="flex items-center justify-start mb-4 mt-10 md:justify-start md:mb-8">
-                <h1 class="text-6xl text-pretty md:text-5xl lg:text-6xl">All Projects</h1>
-                <img src="src/arrow-down.svg" class="w-8 h-auto ml-2 md:w-6 md:ml-4 lg:w-10" alt="Arrow Icon">
-            </div>
-
-            <div class="columns-3xs flex flex-wrap mt-8" id="linksContainer">
-                <!-- Links will be dynamically generated here -->
-            </div>
+    <div class="mx-auto max-w-screen-2xl">
+      <!-- Navigation bar -->
+      <nav class="bg-white-900 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Logo (left) -->
+          <div class="flex items-center">
+            <span id="dm-link-container"></span>
+          </div>
+          <!-- Navbar links (right) -->
+          <div class="hidden md:flex" id="navigation">
+            <!-- Links will be dynamically generated here -->
+          </div>
+          <!-- Hamburger icon for mobile -->
+          <div class="md:hidden">
+            <button
+              id="menu-toggle"
+              class="text-black hover:text-gray-500 focus:outline-none"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile menu (hidden by default) -->
+        <div id="mobile-menu" class="md:hidden hidden bg-black">
+          <div class="px-2 py-4" id="mobile-menu-content">
+            <!-- Links will be dynamically generated here -->
+          </div>
+        </div>
+      </nav>
+      <!-- Projects -->
+      <div class="bg-white p-8 py-8">
+        <div
+          class="flex items-center justify-start mb-4 mt-10 md:justify-start md:mb-8"
+        >
+          <h1 class="text-6xl text-pretty md:text-5xl lg:text-6xl">
+            All Projects
+          </h1>
+          <img
+            src="src/arrow-down.svg"
+            class="w-8 h-auto ml-2 md:w-6 md:ml-4 lg:w-10"
+            alt="Arrow Icon"
+          />
         </div>
 
-        <!-- Footer -->
-        <footer class="bg-black text-white py-8 px-4 rounded-t-3xl">
-            <div class="container mx-auto flex flex-col items-start justify-start px-4">
-                <h1 class="text-2xl md:text-3xl mb-4">Follow Me</h1>
-                <div class="flex flex-col items-start w-full mt-10">
-                    <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer"
-                        class="flex justify-between items-center w-full text-white hover:bg-white hover:text-black text-lg mb-2 py-2 px-4">
-                        <span>Behance</span>
-                        <img src="src/arrow-right-top.svg" class="h-6 w-6 fill-current ml-2" alt="Behance icon">
-                    </a>
-                    <div class="divider mb-2 border-t border-white"></div>
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
-                        class="flex justify-between items-center w-full text-white hover:bg-white hover:text-black text-lg mb-2 py-2 px-4">
-                        <span>LinkedIn</span>
-                        <img src="src/arrow-right-top.svg" class="h-6 w-6 fill-current ml-2" alt="LinkedIn icon">
-                    </a>
-                    <div class="divider mb-2 border-t border-white"></div>
-                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
-                        class="flex justify-between items-center w-full text-white hover:bg-white hover:text-black text-lg mb-2 py-2 px-4">
-                        <span>Twitter</span>
-                        <img src="src/arrow-right-top.svg" class="h-6 w-6 fill-current ml-2" alt="Twitter icon">
-                    </a>
-                    <div class="divider mb-2 border-t border-white"></div>
-                    <a href="https://medium.com/" target="_blank" rel="noopener noreferrer"
-                        class="flex justify-between items-center w-full text-white hover:bg-white hover:text-black text-lg mb-2 py-2 px-4">
-                        <span>Medium</span>
-                        <img src="src/arrow-right-top.svg" class="h-6 w-6 fill-current ml-2" alt="Medium icon">
-                    </a>
-                </div>
-                <p class="mt-8 text-sm text-center">&copy; <span id="copyrightYear"></span>
-                    Dennis Mwangi. All rights reserved.</p>
-            </div>
-        </footer>
+        <div id="linksContainer" class="container mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Links will be generated here -->
+      </div>
+      </div>
 
-    </div> <!-- Closing container div -->
+      <footer class="bg-black text-white py-8 px-4 rounded-t-3xl">
+        <div
+          class="container mx-auto flex flex-col items-start justify-start px-4"
+        >
+          <h1 class="text-2xl md:text-3xl mb-4">Follow Me</h1>
+          <div class="flex flex-col items-start w-full mt-10">
+            <a
+              href="https://www.behance.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex justify-between items-center w-full text-white hover:bg-green-500 text-lg mb-2 py-2 px-4"
+            >
+              <span>Behance</span>
+              <img
+                src="src/arrow-right-top.svg"
+                class="h-6 w-6 fill-current ml-2"
+                alt="Behance icon"
+              />
+            </a>
+            <div class="divider mb-2 border-t border-white"></div>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex justify-between items-center w-full text-white hover:bg-green-500 text-lg mb-2 py-2 px-4"
+            >
+              <span>LinkedIn</span>
+              <img
+                src="src/arrow-right-top.svg"
+                class="h-6 w-6 fill-current ml-2"
+                alt="LinkedIn icon"
+              />
+            </a>
+            <div class="divider mb-2 border-t border-white"></div>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex justify-between items-center w-full text-white hover:bg-green-500 text-lg mb-2 py-2 px-4"
+            >
+              <span>Twitter</span>
+              <img
+                src="src/arrow-right-top.svg"
+                class="h-6 w-6 fill-current ml-2"
+                alt="Twitter icon"
+              />
+            </a>
+            <div class="divider mb-2 border-t border-white"></div>
+            <a
+              href="https://medium.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex justify-between items-center w-full text-white hover:bg-green-500 text-lg mb-2 py-2 px-4"
+            >
+              <span>Medium</span>
+              <img
+                src="src/arrow-right-top.svg"
+                class="h-6 w-6 fill-current ml-2"
+                alt="Medium icon"
+              />
+            </a>
+          </div>
+          <div class="w-full items-center">
+            <p class="mt-8 text-sm text-center">
+              &copy; <span id="copyrightYear"></span> Dennis Mwangi. All rights
+              reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Closing container div -->
     <script>
-        // Define the list of pages
-        const pages = [
-            { title: 'Work', url: 'work.html' },
-            { title: 'About', url: 'about.html' },
-            { title: 'Gallery', url: 'gallery.html' },
-            { title: 'Contact', url: 'contact.html' }
-        ];
-        // Function to generate navigation and mobile menu links
-        function generateLinks(containerId, linksClassName) {
-            const container = document.getElementById(containerId);
-            const fragment = document.createDocumentFragment();
-            pages.forEach(page => {
-                const link = document.createElement('a');
-                link.href = page.url;
-                link.textContent = page.title;
-                link.className = linksClassName;
-                fragment.appendChild(link);
-            });
-            container.appendChild(fragment);
-        }
-        // Function to generate DM link
-        function generateDMLink() {
-            const dmLinkContainer = document.getElementById('dm-link-container');
-            const dmLink = document.createElement('a');
-            dmLink.href = 'index.html';
-            dmLink.textContent = 'DM';
-            dmLink.className = 'text-black text-lg font-semibold hover:text-gray-500 px-4';
-            const span = document.createElement('span');
-            span.appendChild(dmLink);
-            dmLinkContainer.appendChild(span);
-        }
-        // Call the functions to generate links
-        generateLinks('navigation', 'txt-lg text-black hover:text-gray-500 font-semibold px-4');
-        generateLinks('mobile-menu-content', 'block text-white hover:text-gray-500 px-4 py-2');
-        generateDMLink();
+      // Define the list of pages
+      const pages = [
+        { title: "Work", url: "work.html" },
+        { title: "About", url: "about.html" },
+        { title: "Gallery", url: "gallery.html" },
+        { title: "Contact", url: "contact.html" },
+      ];
+      // Function to generate navigation and mobile menu links
+      function generateLinks(containerId, linksClassName) {
+        const container = document.getElementById(containerId);
+        const fragment = document.createDocumentFragment();
+        pages.forEach((page) => {
+          const link = document.createElement("a");
+          link.href = page.url;
+          link.textContent = page.title;
+          link.className = linksClassName;
+          fragment.appendChild(link);
+        });
+        container.appendChild(fragment);
+      }
+      // Function to generate DM link
+      function generateDMLink() {
+        const dmLinkContainer = document.getElementById("dm-link-container");
+        const dmLink = document.createElement("a");
+        dmLink.href = "index.html";
+        dmLink.textContent = "DM";
+        dmLink.className =
+          "text-black text-xl font-thin hover:text-green-500 px-4";
+        const span = document.createElement("span");
+        span.appendChild(dmLink);
+        dmLinkContainer.appendChild(span);
+      }
+      // Call the functions to generate links
+      generateLinks(
+        "navigation",
+        "text-xl text-black hover:text-green-500 font-thin px-4"
+      );
+      generateLinks(
+        "mobile-menu-content",
+        "block text-white hover:text-green-500 px-4 py-2"
+      );
+      generateDMLink();
     </script>
     <script>
-        // Define the links data
-        const links = [
-            { href: "mmotor.html", text: "M-motors - Motorcycle Store", imageSrc: "images/three.webp" },
-            { href: "portias.html", text: "Portias - Fashion Store", imageSrc: "images/four.webp" },
-            { href: "iko.html", text: "Iko - Parcel Delivery", imageSrc: "images/three.webp" },
-            { href: "brainn.html", text: "Brainn - Hr Dashboard", imageSrc: "images/four.webp" }
-            // Add more links as needed
-        ];
-
-        // Function to generate links dynamically
-        function generateLinks() {
-            const linksContainer = document.getElementById('linksContainer');
-            links.forEach(linkData => {
-                const linkDiv = document.createElement('div');
-                linkDiv.className = "w-full md:w-1/2 mb-8";
-                const link = document.createElement('a');
-                link.href = linkData.href;
-                link.className = "block";
-                const image = document.createElement('img');
-                image.className = "rounded-xl w-full aspect-video transform transition duration-300 hover:scale-105 cursor-pointer";
-                image.src = linkData.imageSrc;
-                const heading = document.createElement('h2');
-                heading.className = "mt-4 hover:text-blue-500 text-2xl text-pretty md:text-2xl lg:text-3xl";
-                heading.textContent = linkData.text;
-                link.appendChild(image);
-                link.appendChild(heading);
-                linkDiv.appendChild(link);
-                linksContainer.appendChild(linkDiv);
-            });
-        }
-
-        // Call the function to generate links
-        generateLinks();
-    </script>
+      // Define the links data
+      const links = [
+          { href: "mmotor.html", text: "M-motors - Motorcycle Store", imageSrc: "images/mmotorsmain.png" },
+          { href: "portias.html", text: "Portias - Fashion Store", imageSrc: "images/portiasmain.png" },
+          { href: "iko.html", text: "Iko - Parcel Delivery", imageSrc: "images/ikomain.png" },
+          { href: "brainn.html", text: "Brainn - Hr Dashboard", imageSrc: "images/brainn.png" }
+          // Add more links as needed
+      ];
+  
+      // Function to generate links dynamically
+      function generateLinks() {
+          const linksContainer = document.getElementById('linksContainer');
+          links.forEach(linkData => {
+              const linkDiv = document.createElement('div');
+              linkDiv.className = "w-full mb-8";
+  
+              const link = document.createElement('a');
+              link.href = linkData.href;
+              link.className = "block";
+  
+              const image = document.createElement('img');
+              image.className = "rounded-xl w-full max-w-full aspect-square transform transition duration-300 hover:scale-105 cursor-pointer";
+              image.src = linkData.imageSrc;
+              image.alt = linkData.text;
+  
+              const heading = document.createElement('h2');
+              heading.className = "mt-4 text-gray-700 text-2xl md:text-2xl lg:text-3xl hover:text-gray-900";
+              heading.textContent = linkData.text;
+  
+              link.appendChild(image);
+              link.appendChild(heading);
+              linkDiv.appendChild(link);
+              linksContainer.appendChild(linkDiv);
+          });
+      }
+  
+      // Call the function to generate links
+      generateLinks();
+  </script>
     <script>
-        // JavaScript to toggle mobile menu
-        document.getElementById('menu-toggle').addEventListener('click', function () {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
+      // JavaScript to toggle mobile menu
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
         });
     </script>
-</body>
-
+  </body>
 </html>
