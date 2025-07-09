@@ -109,14 +109,14 @@ include 'includes/header.php';
 
     <!-- CTA Section -->
     <div class="mt-16 text-center">
-      <a href="mailto:dev@dennismaina.xyz" class="inline-flex items-center rounded-full border px-6 py-3 text-lg font-medium text-indigo-600 shadow-sm hover:bg-indigo-700 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors duration-200" aria-label="Get a free website consultation">
-        Get Your Free Website Audit
-        <svg class="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-        </svg>
-      </a>
-      <p class="mt-4 text-sm text-gray-500">Average response time: 2 business hours</p>
-    </div>
+  <a href="mailto:dev@dennismaina.xyz" class="inline-flex items-center rounded-full border px-4 py-2 text-base font-medium text-indigo-600 shadow-sm hover:bg-indigo-700 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors duration-200 md:px-6 md:py-3 md:text-lg" aria-label="Get a free website consultation">
+    Get Your Free Website Audit
+    <svg class="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+    </svg>
+  </a>
+  <p class="mt-4 text-sm text-gray-500">Average response time: 2 business hours</p>
+</div>
   </div>
 </section>
     
